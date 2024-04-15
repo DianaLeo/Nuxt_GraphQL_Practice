@@ -5,10 +5,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 const route = useRoute()
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
-  { name: 'Blog', href: '/blog', current: false },
-  { name: 'Projects', href: '/project', current: false },
-  { name: 'Uses', href: '/uses', current: false },
+  { name: 'Home', href: '/', current: route.name==='index' },
+  { name: 'Blog', href: '/blog', current: route.name==='blog' },
+  { name: 'Projects', href: '/project', current: route.name==='project' },
 ]
 </script>
 

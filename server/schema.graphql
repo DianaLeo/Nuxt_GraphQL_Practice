@@ -1,0 +1,23 @@
+schema {
+    query: Query
+}
+type Query {
+    human: Human
+    starship: Starship
+}
+
+type Human {
+    name: String
+    appearsIn: [Episode]
+    starships: [Starship]
+}
+
+enum Episode {
+    NEWHOPE
+    EMPIRE
+    JEDI
+}
+
+type Starship {
+    name: String
+}

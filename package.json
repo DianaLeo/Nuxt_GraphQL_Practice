@@ -7,18 +7,40 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
+    "@apollo/client": "^3.9.7",
+    "@apollo/server": "^4.10.1",
+    "@as-integrations/h3": "^1.1.6",
+    "@graphql-codegen/typed-document-node": "^5.0.6",
     "@headlessui/vue": "^1.7.19",
     "@heroicons/vue": "^2.1.1",
+    "@hygraph/management-sdk": "^1.2.4",
+    "@vue/apollo-composable": "^4.0.2",
+    "graphql": "^16.8.1",
     "nuxt": "^3.11.0",
+    "nuxt-graphql-client": "^0.2.33",
+    "nuxt-graphql-server": "^3.0.0",
+    "ts-node": "^10.9.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@graphql-codegen/add": "^5.0.2",
+    "@graphql-codegen/cli": "5.0.2",
+    "@graphql-codegen/client-preset": "4.2.4",
+    "@graphql-codegen/introspection": "4.0.3",
+    "@graphql-codegen/typescript": "^4.0.6",
+    "@graphql-codegen/typescript-operations": "^4.2.0",
+    "@graphql-codegen/typescript-vue-apollo": "^4.1.1",
     "@nuxt/content": "^2.12.1",
+    "@nuxtjs/apollo": "^5.0.0-alpha.13",
     "@nuxtjs/tailwindcss": "^6.11.4",
-    "nuxt-icon": "^0.6.9"
+    "@types/node": "^20.11.29",
+    "nuxt-icon": "^0.6.9",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.2"
   }
 }
