@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "codegen": "graphql-codegen --config codegen.ts"
+    "codegen": "graphql-codegen --config codegen.ts",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@apollo/client": "^3.9.7",
@@ -39,6 +40,7 @@
     "@nuxtjs/apollo": "^5.0.0-alpha.13",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@types/node": "^20.11.29",
+    "cypress": "^13.7.3",
     "nuxt-icon": "^0.6.9",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.2"
