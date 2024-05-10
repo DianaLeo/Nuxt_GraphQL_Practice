@@ -1,0 +1,19 @@
+{
+//  "compilerOptions": {
+//    "target": "ESNext",
+//    "module": "NodeNext",
+//    //"moduleResolution": "Node",
+//    "allowArbitraryExtensions": true,
+//    "noEmit": true,
+//    "esModuleInterop": true,
+//    "forceConsistentCasingInFileNames": true,
+//    "strict": true,
+//    "skipLibCheck": true,
+//    "sourceMap": true,
+//    "outDir": "../tests-out",
+//    "baseUrl": ".", // This must be specified if "paths" is.
+//    "paths": {
+//      "@nuxt/test-utils/*": ["node_modules/@nuxt/test-utils/*"] // This mapping is relative to "baseUrl".
+//    }
+//  }
+}

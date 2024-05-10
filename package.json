@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "codegen": "graphql-codegen --config codegen.ts",
-    "cypress:open": "cypress open"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@apollo/client": "^3.9.7",
@@ -24,6 +25,7 @@
     "nuxt": "^3.11.0",
     "nuxt-graphql-client": "^0.2.33",
     "nuxt-graphql-server": "^3.0.0",
+    "playwright": "^1.44.0",
     "ts-node": "^10.9.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
@@ -37,12 +39,17 @@
     "@graphql-codegen/typescript-operations": "^4.2.0",
     "@graphql-codegen/typescript-vue-apollo": "^4.1.1",
     "@nuxt/content": "^2.12.1",
+    "@nuxt/test-utils": "^3.12.1",
     "@nuxtjs/apollo": "^5.0.0-alpha.13",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@types/node": "^20.11.29",
-    "cypress": "^13.7.3",
+    "@vitest/coverage-v8": "^1.6.0",
+    "@vue/test-utils": "^2.4.6",
+    "happy-dom": "^14.10.1",
     "nuxt-icon": "^0.6.9",
+    "playwright-core": "^1.44.0",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.2",
+    "vitest": "^1.6.0"
   }
 }
