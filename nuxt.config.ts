@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   apollo: {
     clients: {
       default: {
-        httpEndpoint: process.env.GQL_HOST
+        httpEndpoint: "https://ap-southeast-2.cdn.hygraph.com/content/cltwe8xxr000008l73ikzaey4/master"//process.env.GQL_HOST
       }
     },
   },

@@ -1,5 +1,5 @@
 <script setup>
-const {data} = await useFetch('https://api-ap-southeast-2.hygraph.com/v2/cltwe8xxr000008l73ikzaey4/master', {
+const {data:pp} = await useFetch('https://api-ap-southeast-2.hygraph.com/v2/cltwe8xxr000008l73ikzaey4/master', {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -13,7 +13,7 @@ const {data} = await useFetch('https://api-ap-southeast-2.hygraph.com/v2/cltwe8x
   })
 })
 
-const products = await data.value?.data.products[0].productPrice
+const products = computed(()=>pp.value?.data.products[0].productPrice) 
 
 const {data: humans} = await useAsyncQuery(gql`
     query getHumans {
@@ -22,8 +22,11 @@ const {data: humans} = await useAsyncQuery(gql`
         }
     }
 `)
+console.log("humans=",humans.value)
 
-
+//const {open, toggleOpen} = useToggle(false)
+// const storage = useStorage('test1',1);
+// console.log("storage",storage.value.test1);
 
 </script>
 
@@ -33,7 +36,7 @@ const {data: humans} = await useAsyncQuery(gql`
     <p>Practiced nuxt/apollo front-end client and hygraph backend integration</p>
     <div class="w-full h-56 bg-slate-100">{{ products }}</div>
 
-    <p>{{humans}}</p>
+    <HomePageContent :data="humans"/>
   </section>
 </template>
 
