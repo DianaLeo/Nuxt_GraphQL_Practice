@@ -1,18 +1,12 @@
-import {describe, expect, test} from "vitest"
-import {setup, $fetch} from "@nuxt/test-utils";
+import {expect, test} from "@playwright/test"
+//import {setup, $fetch, createPage, url} from "@nuxt/test-utils";
 import { chromium } from "playwright"
 
-describe("Home page", async ()=>{
-    await setup()
-    test("Fetch home page", async () => {
-        const html = await $fetch("/")
-        expect(html).toContain("Home")
-    })
+    //await setup()
     test("with playwright", async () => {
         const browser = await chromium.launch()
         const context = await browser.newContext()
         const page = await context.newPage()
-        //const page = createPage()
-        await page.goto("http://localhost:3000")
+        await page.goto("http://127.0.0.1:3000")
+        await expect(page.getByText('Home')).toBeVisible();
     })
-})

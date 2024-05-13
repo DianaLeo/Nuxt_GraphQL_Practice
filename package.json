@@ -20,6 +20,7 @@
     "@headlessui/vue": "^1.7.19",
     "@heroicons/vue": "^2.1.1",
     "@hygraph/management-sdk": "^1.2.4",
+    "@playwright/test": "^1.44.0",
     "@vue/apollo-composable": "^4.0.2",
     "graphql": "^16.8.1",
     "nuxt": "^3.11.0",
