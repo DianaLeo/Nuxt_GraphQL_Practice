@@ -10,7 +10,10 @@
     "postinstall": "nuxt prepare",
     "codegen": "graphql-codegen --config codegen.ts",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "cypress:open": "cypress open",
+    "start": "echo abc & nuxt start",
+    "terraform": "cd terraform && powershell.exe -File ./run_terraform.ps1"
   },
   "dependencies": {
     "@apollo/client": "^3.9.7",

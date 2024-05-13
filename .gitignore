@@ -25,3 +25,6 @@ coverage
 .env.*
 !.env.example
 
+
+terraform/.terraform
+terraform/terraform.tfstate
