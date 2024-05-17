@@ -13,7 +13,9 @@
     "coverage": "vitest run --coverage",
     "cypress:open": "cypress open",
     "start": "echo abc & nuxt start",
-    "terraform": "cd terraform && powershell.exe -File ./run_terraform.ps1"
+    "terraform": "cd terraform && powershell.exe -File ./run_terraform.ps1",
+    "terraform:plan": "bun run scripts/terraform/run-terraform.ts",
+    "terraform:apply": "cd terraform && terraform apply"
   },
   "dependencies": {
     "@apollo/client": "^3.9.7",

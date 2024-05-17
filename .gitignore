@@ -25,6 +25,13 @@ coverage
 .env.*
 !.env.example
 
+### Terraform
+# Old lock file (legacy reasons)
+/resources/terraform/.terraform.lock.hcl
 
-terraform/.terraform
-terraform/terraform.tfstate
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
