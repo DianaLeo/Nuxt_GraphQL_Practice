@@ -1,4 +1,7 @@
 {
   // https://nuxt.com/docs/guide/concepts/typescript
-  "extends": "./.nuxt/tsconfig.json"
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "types": ["node", "webpack-env", "@nuxt/types", "@nuxt/vue-app"]
+  }
 }

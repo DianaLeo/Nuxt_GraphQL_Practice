@@ -8,6 +8,7 @@ const navigation = [
   { name: 'Home', href: '/', current: route.name==='index' },
   { name: 'Blog', href: '/blog', current: route.name==='blog' },
   { name: 'Projects', href: '/project', current: route.name==='project' },
+  { name: 'Chat', href: '/chat', current: route.name==='chat' },
 ]
 </script>
 

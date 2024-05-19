@@ -2,7 +2,15 @@
 // @ts-ignore
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules:['@nuxtjs/tailwindcss','nuxt-icon','@nuxt/content','nuxt-graphql-client','@nuxtjs/apollo','nuxt-graphql-server','@nuxt/test-utils/module'],
+  modules:[
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon',
+    '@nuxt/content',
+    'nuxt-graphql-client',
+    '@nuxtjs/apollo',
+    'nuxt-graphql-server',
+    '@nuxt/test-utils/module',
+  ],
   content:{
 
   },
